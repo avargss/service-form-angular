@@ -1,0 +1,164 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "imagen": "https://example.com/images/camiseta1.jpg",
+            "nombre": "Camiseta Básica Blanca",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 19.99,
+            "marca": "Nike",
+            "tipo": "Camiseta"
+        },
+        {
+            "id": 2,
+            "imagen": "https://example.com/images/jean1.jpg",
+            "nombre": "Jeans Slim Fit",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 49.99,
+            "marca": "Levi's",
+            "tipo": "Pantalón"
+        },
+        {
+            "id": 3,
+            "imagen": "https://example.com/images/chaqueta1.jpg",
+            "nombre": "Chaqueta de Cuero Negra",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 89.99,
+            "marca": "Zara",
+            "tipo": "Chaqueta"
+        },
+        {
+            "id": 4,
+            "imagen": "https://example.com/images/sudadera1.jpg",
+            "nombre": "Sudadera con Capucha",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 39.99,
+            "marca": "Adidas",
+            "tipo": "Sudadera"
+        },
+        {
+            "id": 5,
+            "imagen": "https://example.com/images/vestido1.jpg",
+            "nombre": "Vestido Floral",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 29.99,
+            "marca": "H&M",
+            "tipo": "Vestido"
+        },
+        {
+            "id": 6,
+            "imagen": "https://example.com/images/polo1.jpg",
+            "nombre": "Polo Azul Marino",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 34.99,
+            "marca": "Ralph Lauren",
+            "tipo": "Polo"
+        },
+        {
+            "id": 7,
+            "imagen": "https://example.com/images/falda1.jpg",
+            "nombre": "Falda Plisada",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 24.99,
+            "marca": "Mango",
+            "tipo": "Falda"
+        },
+        {
+            "id": 8,
+            "imagen": "https://example.com/images/buzo1.jpg",
+            "nombre": "Buzo Deportivo",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 44.99,
+            "marca": "Under Armour",
+            "tipo": "Buzo"
+        },
+        {
+            "id": 9,
+            "imagen": "https://example.com/images/pantalon1.jpg",
+            "nombre": "Pantalón de Vestir",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 59.99,
+            "marca": "Tommy Hilfiger",
+            "tipo": "Pantalón"
+        },
+        {
+            "id": 10,
+            "imagen": "https://example.com/images/short1.jpg",
+            "nombre": "Short de Mezclilla",
+            "talla": [
+                "XS",
+                "S",
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "precio": 27.99,
+            "marca": "Guess",
+            "tipo": "Short"
+        }
+    ]
+}
