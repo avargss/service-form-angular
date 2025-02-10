@@ -10,6 +10,7 @@ import { ProductsService } from '../../products.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
+
 export class HomeComponent {
   productsList: Products[] = [];
   productsService: ProductsService = inject(ProductsService);
@@ -28,7 +29,7 @@ export class HomeComponent {
       return;
     }
     this.filteredProductsList = this.productsList.filter((products) =>
-      products?.tipo?.toLowerCase().includes(text.toLowerCase()),
+      products?.marca?.toLowerCase().includes(text.toLowerCase()),
     );
   }
 }

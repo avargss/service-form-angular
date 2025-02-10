@@ -1,164 +1,410 @@
 {
     "products": [
-        {
-            "id": 1,
-            "imagen": "https://example.com/images/camiseta1.jpg",
-            "nombre": "Camiseta Básica Blanca",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 19.99,
-            "marca": "Nike",
-            "tipo": "Camiseta"
-        },
-        {
-            "id": 2,
-            "imagen": "https://example.com/images/jean1.jpg",
-            "nombre": "Jeans Slim Fit",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 49.99,
-            "marca": "Levi's",
-            "tipo": "Pantalón"
-        },
-        {
-            "id": 3,
-            "imagen": "https://example.com/images/chaqueta1.jpg",
-            "nombre": "Chaqueta de Cuero Negra",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 89.99,
-            "marca": "Zara",
-            "tipo": "Chaqueta"
-        },
-        {
-            "id": 4,
-            "imagen": "https://example.com/images/sudadera1.jpg",
-            "nombre": "Sudadera con Capucha",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 39.99,
-            "marca": "Adidas",
-            "tipo": "Sudadera"
-        },
-        {
-            "id": 5,
-            "imagen": "https://example.com/images/vestido1.jpg",
-            "nombre": "Vestido Floral",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 29.99,
-            "marca": "H&M",
-            "tipo": "Vestido"
-        },
-        {
-            "id": 6,
-            "imagen": "https://example.com/images/polo1.jpg",
-            "nombre": "Polo Azul Marino",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 34.99,
-            "marca": "Ralph Lauren",
-            "tipo": "Polo"
-        },
-        {
-            "id": 7,
-            "imagen": "https://example.com/images/falda1.jpg",
-            "nombre": "Falda Plisada",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 24.99,
-            "marca": "Mango",
-            "tipo": "Falda"
-        },
-        {
-            "id": 8,
-            "imagen": "https://example.com/images/buzo1.jpg",
-            "nombre": "Buzo Deportivo",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 44.99,
-            "marca": "Under Armour",
-            "tipo": "Buzo"
-        },
-        {
-            "id": 9,
-            "imagen": "https://example.com/images/pantalon1.jpg",
-            "nombre": "Pantalón de Vestir",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 59.99,
-            "marca": "Tommy Hilfiger",
-            "tipo": "Pantalón"
-        },
-        {
-            "id": 10,
-            "imagen": "https://example.com/images/short1.jpg",
-            "nombre": "Short de Mezclilla",
-            "talla": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "precio": 27.99,
-            "marca": "Guess",
-            "tipo": "Short"
-        }
+      {
+        "id": 1,
+        "imagen": "https://img.freepik.com/free-photo/white-t-shirt-front-view_1303-15614.jpg",
+        "nombre": "Camiseta Básica Blanca",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 19.99,
+        "marca": "Nike",
+        "tipo": "Camiseta"
+      },
+      {
+        "id": 2,
+        "imagen": "https://img.freepik.com/free-photo/black-t-shirt-front-view_1303-15615.jpg",
+        "nombre": "Camiseta Básica Negra",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 19.99,
+        "marca": "Adidas",
+        "tipo": "Camiseta"
+      },
+      {
+        "id": 3,
+        "imagen": "https://img.freepik.com/free-photo/printed-t-shirt-front-view_1303-15616.jpg",
+        "nombre": "Camiseta Estampada",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 21.99,
+        "marca": "Puma",
+        "tipo": "Camiseta"
+      },
+      {
+        "id": 4,
+        "imagen": "https://img.freepik.com/free-photo/sport-t-shirt-front-view_1303-15617.jpg",
+        "nombre": "Camiseta Deportiva",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 22.99,
+        "marca": "Reebok",
+        "tipo": "Camiseta"
+      },
+      {
+        "id": 5,
+        "imagen": "https://img.freepik.com/free-photo/v-neck-t-shirt-front-view_1303-15618.jpg",
+        "nombre": "Camiseta con Cuello en V",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 23.99,
+        "marca": "Under Armour",
+        "tipo": "Camiseta"
+      },
+      {
+        "id": 6,
+        "imagen": "https://img.freepik.com/free-photo/blue-jeans-front-view_1303-15619.jpg",
+        "nombre": "Jeans Slim Fit",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 49.99,
+        "marca": "Levi's",
+        "tipo": "Pantalón"
+      },
+      {
+        "id": 7,
+        "imagen": "https://img.freepik.com/free-photo/dress-pants-front-view_1303-15620.jpg",
+        "nombre": "Pantalón de Vestir",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 59.99,
+        "marca": "Tommy Hilfiger",
+        "tipo": "Pantalón"
+      },
+      {
+        "id": 8,
+        "imagen": "https://img.freepik.com/free-photo/chino-pants-front-view_1303-15621.jpg",
+        "nombre": "Pantalón Chino",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 39.99,
+        "marca": "H&M",
+        "tipo": "Pantalón"
+      },
+      {
+        "id": 9,
+        "imagen": "https://img.freepik.com/free-photo/cargo-pants-front-view_1303-15622.jpg",
+        "nombre": "Pantalón Cargo",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 44.99,
+        "marca": "GAP",
+        "tipo": "Pantalón"
+      },
+      {
+        "id": 10,
+        "imagen": "https://img.freepik.com/free-photo/jogger-pants-front-view_1303-15623.jpg",
+        "nombre": "Pantalón Jogger",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 34.99,
+        "marca": "Nike",
+        "tipo": "Pantalón"
+      },
+      {
+        "id": 11,
+        "imagen": "https://img.freepik.com/free-photo/leather-jacket-front-view_1303-15624.jpg",
+        "nombre": "Chaqueta de Cuero Negra",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 89.99,
+        "marca": "Zara",
+        "tipo": "Chaqueta"
+      },
+      {
+        "id": 12,
+        "imagen": "https://img.freepik.com/free-photo/knit-jacket-front-view_1303-15625.jpg",
+        "nombre": "Chaqueta de Punto",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 69.99,
+        "marca": "Mango",
+        "tipo": "Chaqueta"
+      },
+      {
+        "id": 13,
+        "imagen": "https://img.freepik.com/free-photo/rain-jacket-front-view_1303-15626.jpg",
+        "nombre": "Chaqueta Impermeable",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 99.99,
+        "marca": "The North Face",
+        "tipo": "Chaqueta"
+      },
+      {
+        "id": 14,
+        "imagen": "https://img.freepik.com/free-photo/sport-jacket-front-view_1303-15627.jpg",
+        "nombre": "Chaqueta Deportiva",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 79.99,
+        "marca": "Adidas",
+        "tipo": "Chaqueta"
+      },
+      {
+        "id": 15,
+        "imagen": "https://img.freepik.com/free-photo/bomber-jacket-front-view_1303-15628.jpg",
+        "nombre": "Chaqueta Bomber",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 84.99,
+        "marca": "Puma",
+        "tipo": "Chaqueta"
+      },
+      {
+        "id": 16,
+        "imagen": "https://img.freepik.com/free-photo/hoodie-front-view_1303-15629.jpg",
+        "nombre": "Sudadera con Capucha",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 39.99,
+        "marca": "Adidas",
+        "tipo": "Sudadera"
+      },
+      {
+        "id": 17,
+        "imagen": "https://img.freepik.com/free-photo/oversized-hoodie-front-view_1303-15630.jpg",
+        "nombre": "Sudadera Oversize",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 42.99,
+        "marca": "Nike",
+        "tipo": "Sudadera"
+      },
+      {
+        "id": 18,
+        "imagen": "https://img.freepik.com/free-photo/sport-hoodie-front-view_1303-15631.jpg",
+        "nombre": "Sudadera Deportiva",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 38.99,
+        "marca": "Under Armour",
+        "tipo": "Sudadera"
+      },
+      {
+        "id": 19,
+        "imagen": "https://img.freepik.com/free-photo/printed-hoodie-front-view_1303-15632.jpg",
+        "nombre": "Sudadera Estampada",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 41.99,
+        "marca": "Reebok",
+        "tipo": "Sudadera"
+      },
+      {
+        "id": 20,
+        "imagen": "https://img.freepik.com/free-photo/basic-hoodie-front-view_1303-15633.jpg",
+        "nombre": "Sudadera Básica",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 37.99,
+        "marca": "Puma",
+        "tipo": "Sudadera"
+      },
+      {
+        "id": 21,
+        "imagen": "https://img.freepik.com/free-photo/floral-dress-front-view_1303-15634.jpg",
+        "nombre": "Vestido Floral",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 29.99,
+        "marca": "H&M",
+        "tipo": "Vestido"
+      },
+      {
+        "id": 22,
+        "imagen": "https://img.freepik.com/free-photo/night-dress-front-view_1303-15635.jpg",
+        "nombre": "Vestido de Noche",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 39.99,
+        "marca": "Mango",
+        "tipo": "Vestido"
+      },
+      {
+        "id": 23,
+        "imagen": "https://img.freepik.com/free-photo/casual-dress-front-view_1303-15636.jpg",
+        "nombre": "Vestido Casual",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 34.99,
+        "marca": "Zara",
+        "tipo": "Vestido"
+      },
+      {
+        "id": 24,
+        "imagen": "https://img.freepik.com/free-photo/long-dress-front-view_1303-15637.jpg",
+        "nombre": "Vestido Largo",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 44.99,
+        "marca": "Bershka",
+        "tipo": "Vestido"
+      },
+      {
+        "id": 25,
+        "imagen": "https://img.freepik.com/free-photo/summer-dress-front-view_1303-15638.jpg",
+        "nombre": "Vestido de Verano",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 32.99,
+        "marca": "Stradivarius",
+        "tipo": "Vestido"
+      },
+      {
+        "id": 26,
+        "imagen": "https://img.freepik.com/free-photo/navy-polo-shirt-front-view_1303-15639.jpg",
+        "nombre": "Polo Azul Marino",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 34.99,
+        "marca": "Ralph Lauren",
+        "tipo": "Polo"
+      },
+      {
+        "id": 27,
+        "imagen": "https://img.freepik.com/free-photo/white-polo-shirt-front-view_1303-15640.jpg",
+        "nombre": "Polo Blanco",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 36.99,
+        "marca": "Lacoste",
+        "tipo": "Polo"
+      },
+      {
+        "id": 28,
+        "imagen": "https://img.freepik.com/free-photo/striped-polo-shirt-front-view_1303-15641.jpg",
+        "nombre": "Polo a Rayas",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 33.99,
+        "marca": "Calvin Klein",
+        "tipo": "Polo"
+      },
+      {
+        "id": 29,
+        "imagen": "https://img.freepik.com/free-photo/printed-polo-shirt-front-view_1303-15642.jpg",
+        "nombre": "Polo Estampado",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 35.99,
+        "marca": "Tommy Hilfiger",
+        "tipo": "Polo"
+      },
+      {
+        "id": 30,
+        "imagen": "https://img.freepik.com/free-photo/long-sleeve-polo-shirt-front-view_1303-15643.jpg",
+        "nombre": "Polo de Manga Larga",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 38.99,
+        "marca": "Fred Perry",
+        "tipo": "Polo"
+      },
+      {
+        "id": 31,
+        "imagen": "https://img.freepik.com/free-photo/pleated-skirt-front-view_1303-15644.jpg",
+        "nombre": "Falda Plisada",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 24.99,
+        "marca": "Mango",
+        "tipo": "Falda"
+      },
+      {
+        "id": 32,
+        "imagen": "https://img.freepik.com/free-photo/pencil-skirt-front-view_1303-15645.jpg",
+        "nombre": "Falda Lápiz",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 27.99,
+        "marca": "H&M",
+        "tipo": "Falda"
+      },
+      {
+        "id": 33,
+        "imagen": "https://img.freepik.com/free-photo/midi-skirt-front-view_1303-15646.jpg",
+        "nombre": "Falda Midi",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 29.99,
+        "marca": "Zara",
+        "tipo": "Falda"
+      },
+      {
+        "id": 34,
+        "imagen": "https://img.freepik.com/free-photo/a-line-skirt-front-view_1303-15647.jpg",
+        "nombre": "Falda A-Line",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 26.99,
+        "marca": "Bershka",
+        "tipo": "Falda"
+      },
+      {
+        "id": 35,
+        "imagen": "https://img.freepik.com/free-photo/tulle-skirt-front-view_1303-15648.jpg",
+        "nombre": "Falda de Tul",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 31.99,
+        "marca": "Stradivarius",
+        "tipo": "Falda"
+      },
+      {
+        "id": 36,
+        "imagen": "https://img.freepik.com/free-photo/sport-sweatshirt-front-view_1303-15649.jpg",
+        "nombre": "Buzo Deportivo",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 44.99,
+        "marca": "Under Armour",
+        "tipo": "Buzo"
+      },
+      {
+        "id": 37,
+        "imagen": "https://img.freepik.com/free-photo/cotton-sweatshirt-front-view_1303-15650.jpg",
+        "nombre": "Buzo de Algodón",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 39.99,
+        "marca": "Nike",
+        "tipo": "Buzo"
+      },
+      {
+        "id": 38,
+        "imagen": "https://img.freepik.com/free-photo/zipper-sweatshirt-front-view_1303-15651.jpg",
+        "nombre": "Buzo con Cremallera",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 41.99,
+        "marca": "Adidas",
+        "tipo": "Buzo"
+      },
+      {
+        "id": 39,
+        "imagen": "https://img.freepik.com/free-photo/printed-sweatshirt-front-view_1303-15652.jpg",
+        "nombre": "Buzo Estampado",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 42.99,
+        "marca": "Puma",
+        "tipo": "Buzo"
+      },
+      {
+        "id": 40,
+        "imagen": "https://img.freepik.com/free-photo/casual-sweatshirt-front-view_1303-15653.jpg",
+        "nombre": "Buzo Casual",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 40.99,
+        "marca": "Reebok",
+        "tipo": "Buzo"
+      },
+      {
+        "id": 41,
+        "imagen": "https://img.freepik.com/free-photo/denim-shorts-front-view_1303-15654.jpg",
+        "nombre": "Short de Mezclilla",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 27.99,
+        "marca": "Guess",
+        "tipo": "Short"
+      },
+      {
+        "id": 42,
+        "imagen": "https://img.freepik.com/free-photo/sport-shorts-front-view_1303-15655.jpg",
+        "nombre": "Short Deportivo",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 29.99,
+        "marca": "Nike",
+        "tipo": "Short"
+      },
+      {
+        "id": 43,
+        "imagen": "https://img.freepik.com/free-photo/casual-shorts-front-view_1303-15656.jpg",
+        "nombre": "Short Casual",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 26.99,
+        "marca": "Adidas",
+        "tipo": "Short"
+      },
+      {
+        "id": 44,
+        "imagen": "https://img.freepik.com/free-photo/printed-shorts-front-view_1303-15657.jpg",
+        "nombre": "Short Estampado",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 28.99,
+        "marca": "Puma",
+        "tipo": "Short"
+      },
+      {
+        "id": 45,
+        "imagen": "https://img.freepik.com/free-photo/cargo-shorts-front-view_1303-15658.jpg",
+        "nombre": "Short Cargo",
+        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
+        "precio": 30.99,
+        "marca": "Levi's",
+        "tipo": "Short"
+      }
     ]
-}
+  }
+  
