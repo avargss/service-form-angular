@@ -25,11 +25,20 @@ export class HomeComponent {
 
   filterResults(text: string) {
     if (!text) {
-      this.filteredProductsList = this.productsList;
+      this.filteredProductsList = this.productsList.filter((products) => products?.marca.toLowerCase().includes(text.toLowerCase()));
       return;
     }
-    this.filteredProductsList = this.productsList.filter((products) =>
-      products?.marca?.toLowerCase().includes(text.toLowerCase()),
+
+    this.filteredProductsList = this.productsList.filter((product) =>
+      product?.marca.toLowerCase().includes(text.toLowerCase()),
     );
+
+
+    /* this.productsService.getAllProducts().then((productsList: Products[]) => {
+      this.productsList = productsList;
+      this.filteredProductsList = productsList;
+    }); */
+
   }
+
 }
