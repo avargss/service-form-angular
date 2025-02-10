@@ -1,16 +1,16 @@
 <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
-    <a routerLink="/" class="logo flex items-center">
+    <a [routerLink]="['/']" class="logo flex items-center">
         <img src="logo.png" alt="Logo" class="h-10 mr-2">
         <span class="text-xl font-bold">Tienda de Ropa</span>
     </a>
 
     <div class="flex space-x-4">
-        <a routerLink="cart" class="flex items-center">
+        <a [routerLink]="['cart']" class="flex items-center">
             <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
                 🛒 Carrito
             </button>
         </a>
-        <a routerLink="/login" class="flex items-center">
+        <a [routerLink]="['login']" class="flex items-center">
             <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
                 🔑 Iniciar Sesión
             </button>
