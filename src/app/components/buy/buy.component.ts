@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-add-product',
+  selector: 'app-buy',
   imports: [CommonModule, RouterModule],
-  templateUrl: './add-product.component.html',
-  styleUrl: './add-product.component.css'
+  templateUrl: './buy.component.html',
+  styleUrl: './buy.component.css'
 })
-export class AddProductComponent {
+export class BuyComponent {
 
 }

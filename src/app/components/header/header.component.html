@@ -5,9 +5,14 @@
     </a>
 
     <div class="flex space-x-4">
-        <a [routerLink]="['cart']" class="flex items-center">
+        <a [routerLink]="['carrito']" class="flex items-center">
             <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
                 🛒 Carrito
+            </button>
+        </a>
+        <a [routerLink]="['crear']" class="flex items-center">
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
+                📦 Añadir producto
             </button>
         </a>
         <a [routerLink]="['login']" class="flex items-center">
@@ -15,6 +20,5 @@
                 🔑 Iniciar Sesión
             </button>
         </a>
-
     </div>
 </header>

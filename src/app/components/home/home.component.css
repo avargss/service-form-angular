@@ -1,11 +1,10 @@
 .results {
-    display: grid;
-    column-gap: 14px;
-    row-gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px; /* Esto agrega espacio entre los elementos */
     margin-top: 50px;
     margin-bottom: 50px;
-    justify-content: space-around;
 }
 
 section form {

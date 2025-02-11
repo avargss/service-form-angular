@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductsComponent } from "../products/products.component";
-import { Products } from '../products';
+import { Products } from '../../model/products';
 import { ProductsService } from '../../products.service';
 
 @Component({
