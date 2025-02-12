@@ -1,4 +1,4 @@
-/* .results {
+.results {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,17 +30,6 @@ input[type="text"] {
 input[type="text"]:focus {
     border-color: #ff0080;
     box-shadow: 0px 0px 5px rgba(255, 0, 128, 0.5);
-} */
-
-
-.home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    height: 339px;
-    color: white;
 }
 
 button.primary {
@@ -62,7 +51,7 @@ button.primary:hover {
     box-shadow: 0px 0px 10px rgba(255, 140, 0, 0.5);
 }
 
-/* h1 {
+h1 {
     font-size: 28px;
     font-weight: bold;
     color: #ff8c00;
@@ -85,4 +74,4 @@ button.primary:hover {
     .results {
         grid-template-columns: 1fr;
     }
-} */
+}

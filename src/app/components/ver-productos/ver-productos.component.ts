@@ -1,19 +1,18 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ProductsComponent } from "../products/products.component";
 import { Products } from '../../model/products';
 import { ProductsService } from '../../services/products.service';
-import { RouterModule } from '@angular/router';
+import { ProductsComponent } from "../products/products.component";
+import { NgForOf } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
-  imports: [CommonModule, RouterModule, ProductsComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  selector: 'app-ver-productos',
+  imports: [ProductsComponent, NgForOf],
+  templateUrl: './ver-productos.component.html',
+  styleUrl: './ver-productos.component.css'
 })
+export class VerProductosComponent {
 
-export class HomeComponent {
-  /* productsList: Products[] = [];
+  productsList: Products[] = [];
   productsService: ProductsService = inject(ProductsService);
   filteredProductsList: Products[] = [];
 
@@ -32,12 +31,13 @@ export class HomeComponent {
 
     this.filteredProductsList = this.productsList.filter((product) =>
       product?.categoria.toLowerCase().includes(text.toLowerCase()),
-    ); */
+    );
 
 
-  /* this.productsService.getAllProducts().then((productsList: Products[]) => {
-    this.productsList = productsList;
-    this.filteredProductsList = productsList;
-  }); */
+    /* this.productsService.getAllProducts().then((productsList: Products[]) => {
+      this.productsList = productsList;
+      this.filteredProductsList = productsList;
+    }); */
 
+  }
 }

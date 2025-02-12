@@ -1,9 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { CartComponent } from './components/cart/cart.component';
-import { AddProductComponent } from './components/add-product/add-product.component';
-import { LoginComponent } from './components/login/login.component';
-import { BuyComponent } from './components/buy/buy.component';
+import { AddProductComponent } from './components/add-producto/add-product.component';
+import { VerProductosComponent } from './components/ver-productos/ver-productos.component';
 
 export const routes: Routes = [
     {
@@ -12,25 +10,15 @@ export const routes: Routes = [
         title: 'Home page',
     },
     {
-        path: 'carrito',
-        component: CartComponent,
-        title: 'Carrito producto',
-    },
-    {
-        path: 'crear',
+        path: 'crear-producto',
         component: AddProductComponent,
         title: 'Añadir producto',
     },
     {
-        path: 'login',
-        component: LoginComponent,
-        title: 'Login page',
+        path: 'ver-producto',
+        component: VerProductosComponent,
+        title: 'Ver productos',
     },
-     {
-        path: 'comprar/:id',
-        component: BuyComponent,
-        title: ''
-    }
 ];
 
 export default routes;

@@ -1,6 +1,6 @@
 <section class="listing">
     <img class="listing-photo" [src]="products.imagen" alt="Foto de {{products.nombre}}" />
     <h2 class="listing-heading">{{ products.nombre }}</h2>
-    <p class="listing-size">{{ products.tipo }} | {{products.marca}}</p>
-    <a [routerLink]="['/comprar', products.id]">Comprar producto</a>
+    <p class="listing-size">{{ products.tipo }} | {{products.categoria}}</p>
+    <a [routerLink]="['/comprar', products.id]">Seleccionar producto</a> <!-- Cambiar a seleccionar producto -->
 </section>

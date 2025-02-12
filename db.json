@@ -1,185 +1,132 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "imagen": "https://img.freepik.com/free-photo/white-t-shirt-front-view_1303-15614.jpg",
-        "nombre": "Camiseta Básica Blanca",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 19.99,
-        "marca": "Nike",
-        "tipo": "Camiseta"
-      },
-      {
-        "id": 2,
-        "imagen": "https://img.freepik.com/free-photo/black-t-shirt-front-view_1303-15615.jpg",
-        "nombre": "Camiseta Básica Negra",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 19.99,
-        "marca": "Adidas",
-        "tipo": "Camiseta"
-      },
-      {
-        "id": 3,
-        "imagen": "https://img.freepik.com/free-photo/printed-t-shirt-front-view_1303-15616.jpg",
-        "nombre": "Camiseta Estampada",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 21.99,
-        "marca": "Puma",
-        "tipo": "Camiseta"
-      },
-      {
-        "id": 4,
-        "imagen": "https://img.freepik.com/free-photo/sport-t-shirt-front-view_1303-15617.jpg",
-        "nombre": "Camiseta Deportiva",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 22.99,
-        "marca": "Reebok",
-        "tipo": "Camiseta"
-      },
-      {
-        "id": 5,
-        "imagen": "https://img.freepik.com/free-photo/v-neck-t-shirt-front-view_1303-15618.jpg",
-        "nombre": "Camiseta con Cuello en V",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 23.99,
-        "marca": "Under Armour",
-        "tipo": "Camiseta"
-      },
-      {
-        "id": 6,
-        "imagen": "https://img.freepik.com/free-photo/blue-jeans-front-view_1303-15619.jpg",
-        "nombre": "Jeans Slim Fit",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 49.99,
-        "marca": "Levi's",
-        "tipo": "Pantalón"
-      },
-      {
-        "id": 7,
-        "imagen": "https://img.freepik.com/free-photo/dress-pants-front-view_1303-15620.jpg",
-        "nombre": "Pantalón de Vestir",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 59.99,
-        "marca": "Tommy Hilfiger",
-        "tipo": "Pantalón"
-      },
-      {
-        "id": 8,
-        "imagen": "https://img.freepik.com/free-photo/chino-pants-front-view_1303-15621.jpg",
-        "nombre": "Pantalón Chino",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 39.99,
-        "marca": "H&M",
-        "tipo": "Pantalón"
-      },
-      {
-        "id": 9,
-        "imagen": "https://img.freepik.com/free-photo/cargo-pants-front-view_1303-15622.jpg",
-        "nombre": "Pantalón Cargo",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 44.99,
-        "marca": "GAP",
-        "tipo": "Pantalón"
-      },
-      {
-        "id": 10,
-        "imagen": "https://img.freepik.com/free-photo/jogger-pants-front-view_1303-15623.jpg",
-        "nombre": "Pantalón Jogger",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 34.99,
-        "marca": "Nike",
-        "tipo": "Pantalón"
-      },
-      {
-        "id": 11,
-        "imagen": "https://img.freepik.com/free-photo/leather-jacket-front-view_1303-15624.jpg",
-        "nombre": "Chaqueta de Cuero Negra",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 89.99,
-        "marca": "Zara",
-        "tipo": "Chaqueta"
-      },
-      {
-        "id": 12,
-        "imagen": "https://img.freepik.com/free-photo/knit-jacket-front-view_1303-15625.jpg",
-        "nombre": "Chaqueta de Punto",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 69.99,
-        "marca": "Mango",
-        "tipo": "Chaqueta"
-      },
-      {
-        "id": 13,
-        "imagen": "https://img.freepik.com/free-photo/rain-jacket-front-view_1303-15626.jpg",
-        "nombre": "Chaqueta Impermeable",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 99.99,
-        "marca": "The North Face",
-        "tipo": "Chaqueta"
-      },
-      {
-        "id": 14,
-        "imagen": "https://img.freepik.com/free-photo/sport-jacket-front-view_1303-15627.jpg",
-        "nombre": "Chaqueta Deportiva",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 79.99,
-        "marca": "Adidas",
-        "tipo": "Chaqueta"
-      },
-      {
-        "id": 15,
-        "imagen": "https://img.freepik.com/free-photo/bomber-jacket-front-view_1303-15628.jpg",
-        "nombre": "Chaqueta Bomber",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 84.99,
-        "marca": "Puma",
-        "tipo": "Chaqueta"
-      },
-      {
-        "id": 16,
-        "imagen": "https://img.freepik.com/free-photo/hoodie-front-view_1303-15629.jpg",
-        "nombre": "Sudadera con Capucha",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 39.99,
-        "marca": "Adidas",
-        "tipo": "Sudadera"
-      },
-      {
-        "id": 17,
-        "imagen": "https://img.freepik.com/free-photo/oversized-hoodie-front-view_1303-15630.jpg",
-        "nombre": "Sudadera Oversize",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 42.99,
-        "marca": "Nike",
-        "tipo": "Sudadera"
-      },
-      {
-        "id": 18,
-        "imagen": "https://img.freepik.com/free-photo/sport-hoodie-front-view_1303-15631.jpg",
-        "nombre": "Sudadera Deportiva",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 38.99,
-        "marca": "Under Armour",
-        "tipo": "Sudadera"
-      },
-      {
-        "id": 19,
-        "imagen": "https://img.freepik.com/free-photo/printed-hoodie-front-view_1303-15632.jpg",
-        "nombre": "Sudadera Estampada",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 41.99,
-        "marca": "Reebok",
-        "tipo": "Sudadera"
-      },
-      {
-        "id": 20,
-        "imagen": "https://img.freepik.com/free-photo/basic-hoodie-front-view_1303-15633.jpg",
-        "nombre": "Sudadera Básica",
-        "talla": ["XS", "S", "M", "L", "XL", "XXL"],
-        "precio": 37.99,
-        "marca": "Puma",
-        "tipo": "Sudadera"
-      }      
-    ]
-  }
-  
+  "products": [
+    {
+      "id": 1,
+      "imagen": "https://img.freepik.com/free-photo/white-t-shirt-front-view_1303-15614.jpg",
+      "nombre": "Camiseta Básica Blanca",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 19.99,
+      "categoria": "log",
+      "tipo": "Camiseta"
+    },
+    {
+      "id": 2,
+      "imagen": "https://img.freepik.com/free-photo/black-t-shirt-front-view_1303-15615.jpg",
+      "nombre": "Camiseta Básica Negra",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 19.99,
+      "categoria": "log",
+      "tipo": "Camiseta"
+    },
+    {
+      "id": 3,
+      "imagen": "https://img.freepik.com/free-photo/printed-t-shirt-front-view_1303-15616.jpg",
+      "nombre": "Camiseta Estampada",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 21.99,
+      "categoria": "log",
+      "tipo": "Camiseta"
+    },
+    {
+      "id": 4,
+      "imagen": "https://img.freepik.com/free-photo/sport-t-shirt-front-view_1303-15617.jpg",
+      "nombre": "Camiseta Deportiva",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 22.99,
+      "categoria": "warn",
+      "tipo": "Camiseta"
+    },
+    {
+      "id": 5,
+      "imagen": "https://img.freepik.com/free-photo/v-neck-t-shirt-front-view_1303-15618.jpg",
+      "nombre": "Camiseta con Cuello en V",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 23.99,
+      "categoria": "warn",
+      "tipo": "Camiseta"
+    },
+    {
+      "id": 6,
+      "imagen": "https://img.freepik.com/free-photo/blue-jeans-front-view_1303-15619.jpg",
+      "nombre": "Jeans Slim Fit",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 49.99,
+      "categoria": "warn",
+      "tipo": "Pantalón"
+    },
+    {
+      "id": 7,
+      "imagen": "https://img.freepik.com/free-photo/dress-pants-front-view_1303-15620.jpg",
+      "nombre": "Pantalón de Vestir",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 59.99,
+      "categoria": "error",
+      "tipo": "Pantalón"
+    },
+    {
+      "id": 8,
+      "imagen": "https://img.freepik.com/free-photo/chino-pants-front-view_1303-15621.jpg",
+      "nombre": "Pantalón Chino",
+      "talla": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "precio": 39.99,
+      "categoria": "error",
+      "tipo": "Pantalón"
+    }
+  ]
+}
