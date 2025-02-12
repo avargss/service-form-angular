@@ -1,22 +1,9 @@
-<!-- <h1>Nuestros productos</h1>
-
-<section>
-    <form>
-        <input type="text" placeholder="Filtrar por categoria" #filter (submit)="filterResults(filter.value)"/>
-        <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
-    </form>
-</section>
-
-<section class="results">
-    <app-products *ngFor="let products of filteredProductsList" [products]="products"></app-products>
-</section> -->
-
 <div class="home">
-    <a [routerLink]="['/crear-producto']">
-        <button class="primary">Registrar nuevo producto</button>
+    <a [routerLink]="['/registrar-incidencia']">
+        <button class="primary">📞 Registrar nueva incidencia</button>
     </a>
 
-    <a [routerLink]="['/ver-producto']">
-        <button class="primary">Ver productos</button>
+    <a [routerLink]="['/incidentes']">
+        <button class="primary">🔑 Listado de incidencias</button>
     </a>
 </div>

@@ -1,10 +1,10 @@
 header {
   width: 100%;
-  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  background: linear-gradient(90deg, #00ddff, #8400ff);
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center;
   top: 0;
   left: 0;
@@ -22,6 +22,12 @@ header .logo {
 header img {
   height: 50px;
   margin-right: 10px;
+}
+
+header h1 {
+  font-size: 2.5rem; /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+  text-align: center; /* Centra el texto */
 }
 
 header button {

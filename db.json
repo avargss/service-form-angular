@@ -1,132 +1,94 @@
 {
-  "products": [
+  "incidencias": [
     {
       "id": 1,
-      "imagen": "https://img.freepik.com/free-photo/white-t-shirt-front-view_1303-15614.jpg",
-      "nombre": "Camiseta Básica Blanca",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 19.99,
-      "categoria": "log",
-      "tipo": "Camiseta"
+      "nombre": "Mantenimiento Preventivo",
+      "tipo": "Mantenimiento",
+      "precio": 50.00,
+      "categoria": "Log",
+      "descripcion": "Revisión y ajuste de componentes.",
+      "fecha": "2024-02-12"
     },
     {
       "id": 2,
-      "imagen": "https://img.freepik.com/free-photo/black-t-shirt-front-view_1303-15615.jpg",
-      "nombre": "Camiseta Básica Negra",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 19.99,
-      "categoria": "log",
-      "tipo": "Camiseta"
+      "nombre": "Reparación de Pantalla",
+      "tipo": "Reparación",
+      "precio": 120.00,
+      "categoria": "Warn",
+      "descripcion": "Cambio de pantalla dañada.",
+      "fecha": "2024-02-10"
     },
     {
       "id": 3,
-      "imagen": "https://img.freepik.com/free-photo/printed-t-shirt-front-view_1303-15616.jpg",
-      "nombre": "Camiseta Estampada",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 21.99,
-      "categoria": "log",
-      "tipo": "Camiseta"
+      "nombre": "Limpieza de Sistema",
+      "tipo": "Limpieza",
+      "precio": 30.00,
+      "categoria": "Error",
+      "descripcion": "Eliminación de archivos temporales y optimización.",
+      "fecha": "2024-02-08"
     },
     {
       "id": 4,
-      "imagen": "https://img.freepik.com/free-photo/sport-t-shirt-front-view_1303-15617.jpg",
-      "nombre": "Camiseta Deportiva",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 22.99,
-      "categoria": "warn",
-      "tipo": "Camiseta"
+      "nombre": "Instalación de Software",
+      "tipo": "Instalación",
+      "precio": 40.00,
+      "categoria": "Log",
+      "descripcion": "Instalación y configuración de programas.",
+      "fecha": "2024-02-07"
     },
     {
       "id": 5,
-      "imagen": "https://img.freepik.com/free-photo/v-neck-t-shirt-front-view_1303-15618.jpg",
-      "nombre": "Camiseta con Cuello en V",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 23.99,
-      "categoria": "warn",
-      "tipo": "Camiseta"
+      "nombre": "Configuración de Red",
+      "tipo": "Configuración",
+      "precio": 70.00,
+      "categoria": "Warn",
+      "descripcion": "Ajuste de redes y conexiones.",
+      "fecha": "2024-02-06"
     },
     {
       "id": 6,
-      "imagen": "https://img.freepik.com/free-photo/blue-jeans-front-view_1303-15619.jpg",
-      "nombre": "Jeans Slim Fit",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 49.99,
-      "categoria": "warn",
-      "tipo": "Pantalón"
+      "nombre": "Reparación de Hardware",
+      "tipo": "Reparación",
+      "precio": 150.00,
+      "categoria": "Error",
+      "descripcion": "Sustitución de piezas dañadas.",
+      "fecha": "2024-02-05"
     },
     {
       "id": 7,
-      "imagen": "https://img.freepik.com/free-photo/dress-pants-front-view_1303-15620.jpg",
-      "nombre": "Pantalón de Vestir",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 59.99,
-      "categoria": "error",
-      "tipo": "Pantalón"
+      "nombre": "Mantenimiento Correctivo",
+      "tipo": "Mantenimiento",
+      "precio": 60.00,
+      "categoria": "Log",
+      "descripcion": "Reparación de fallos detectados.",
+      "fecha": "2024-02-04"
     },
     {
       "id": 8,
-      "imagen": "https://img.freepik.com/free-photo/chino-pants-front-view_1303-15621.jpg",
-      "nombre": "Pantalón Chino",
-      "talla": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "precio": 39.99,
-      "categoria": "error",
-      "tipo": "Pantalón"
+      "nombre": "Limpieza de Virus",
+      "tipo": "Limpieza",
+      "precio": 45.00,
+      "categoria": "Warn",
+      "descripcion": "Eliminación de malware y virus.",
+      "fecha": "2024-02-03"
+    },
+    {
+      "id": 9,
+      "nombre": "Instalación de Hardware",
+      "tipo": "Instalación",
+      "precio": 80.00,
+      "categoria": "Log",
+      "descripcion": "Montaje y configuración de nuevos dispositivos.",
+      "fecha": "2024-02-02"
+    },
+    {
+      "id": 10,
+      "nombre": "Otros Servicios",
+      "tipo": "Otros",
+      "precio": 100.00,
+      "categoria": "Error",
+      "descripcion": "Servicios adicionales según requerimiento.",
+      "fecha": "2024-02-01"
     }
   ]
 }

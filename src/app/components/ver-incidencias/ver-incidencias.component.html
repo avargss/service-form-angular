@@ -1,0 +1,22 @@
+<section>
+    <form>
+        <input type="text" placeholder="Filtrar por categoria" #filter (submit)="filterResults(filter.value)" />
+        <button class="primary" type="button" (click)="filterResults(filter.value)">Buscar</button>
+    </form>
+</section>
+
+<section *ngIf="incidenciaSeleccionada" class="selected-incidencia" [ngStyle]="{'background-color': getBackgroundColor(incidenciaSeleccionada.categoria)}">
+    <h2>{{ incidenciaSeleccionada.nombre }}</h2>
+    <p>Tipo: {{ incidenciaSeleccionada.tipo }}</p>
+    <p>Precio: {{ incidenciaSeleccionada.precio }}€</p>
+    <p>Categoría: {{ incidenciaSeleccionada.categoria }}</p>
+    <p>Descripción: {{ incidenciaSeleccionada.descripcion }}</p>
+    <p>Fecha: {{ incidenciaSeleccionada.fecha }}</p>
+    <button class="primary" (click)="closeIncidencia()">Cerrar</button>
+</section>
+
+<section class="results">
+    <app-incidencias *ngFor="let incidencia of filteredIncidenciasList" [incidencia]="incidencia"
+        (incidenciaSeleccionada)="selectIncidencia($event)">
+    </app-incidencias>
+</section>

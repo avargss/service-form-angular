@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { AddProductComponent } from './components/add-producto/add-product.component';
-import { VerProductosComponent } from './components/ver-productos/ver-productos.component';
+import { CrearIncidenciaComponent } from './components/crear-incidencia/crear-incidencia.component';
+import { VerIncidenciasComponent } from './components/ver-incidencias/ver-incidencias.component';
 
 export const routes: Routes = [
     {
@@ -10,14 +10,14 @@ export const routes: Routes = [
         title: 'Home page',
     },
     {
-        path: 'crear-producto',
-        component: AddProductComponent,
-        title: 'Añadir producto',
+        path: 'registrar-incidencia',
+        component: CrearIncidenciaComponent,
+        title: 'Crear incidencia',
     },
     {
-        path: 'ver-producto',
-        component: VerProductosComponent,
-        title: 'Ver productos',
+        path: 'incidentes',
+        component: VerIncidenciasComponent,
+        title: 'Ver incidentes',
     },
 ];
 
