@@ -3,6 +3,7 @@ import { Incidencias } from '../../model/incidencias';
 import { IncidenciasService } from '../../services/incidencias.service';
 import { IncidenciasComponent } from "../incidencias/incidencias.component";
 import { NgIf, NgStyle } from '@angular/common';
+import { LoggerService } from '../../services/logger.service';
 
 @Component({
   selector: 'app-ver-incidencias',
@@ -17,13 +18,18 @@ export class VerIncidenciasComponent {
   filteredIncidenciasList: Incidencias[] = [];
   incidenciaSeleccionada: Incidencias | null = null;
   categorias: string[] = [];
+  
 
-  constructor() {
+  constructor(private logger: LoggerService) {
     this.incidenciasService.getAllIncidencias().then((incidenciasList: Incidencias[]) => {
       this.incidenciasList = incidenciasList;
       this.filteredIncidenciasList = incidenciasList;
       this
     });
+
+    // Implementar contador de incidencias en el navbar. Tengo que investigar como hacerlo
+    this.logger.log('Incidencias cargadas');
+
   }
 
   filterResults(text: string) {
@@ -47,7 +53,7 @@ export class VerIncidenciasComponent {
   selectIncidencia(incidencia: Incidencias) {
     
     this.incidenciaSeleccionada = incidencia;
-    console.log('Incidencia seleccionada llega', this.incidenciaSeleccionada);
+    console.log('Incidencia seleccionadad llega', this.incidenciaSeleccionada);
   }
 
   closeIncidencia() {

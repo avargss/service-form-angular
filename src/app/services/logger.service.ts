@@ -19,15 +19,15 @@ export class LoggerService {
     this.showCounts();
   }
 
-  error(msg: string) {
-    console.error(msg);
-    this.countError++;
-    this.showCounts();
-  }
-
   warn(msg: string) {
     console.warn(msg);
     this.countWarn++;
+    this.showCounts();
+  }
+
+  error(msg: string) {
+    console.error(msg);
+    this.countError++;
     this.showCounts();
   }
 
