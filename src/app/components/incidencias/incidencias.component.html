@@ -1,6 +1,23 @@
-<section class="listing">
-  <h2 class="listing-heading">{{ incidencia.nombre }}</h2>
-  <p class="listing-size">{{ incidencia.tipo }} | {{incidencia.categoria}}</p>
-  <p class="listing-price">{{ incidencia.precio }}€</p>
-  <button (click)="selectIncidencia()">Gestionar</button>
+<section class="results">
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Precio</th>
+        <th>Categoría</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let incidencia of filteredIncidenciasList"
+        [ngStyle]="{'background-color': getBackgroundColor(incidencia.categoria)}">
+        <td>{{ incidencia.nombre }}</td>
+        <td>{{ incidencia.tipo }}</td>
+        <td>{{ incidencia.precio }}€</td>
+        <td>{{ incidencia.categoria }}</td>
+        <td><button (click)="selectIncidencia(incidencia);">Gestionar</button></td>
+      </tr>
+    </tbody>
+  </table>
 </section>

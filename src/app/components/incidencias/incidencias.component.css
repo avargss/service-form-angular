@@ -1,3 +1,53 @@
+.results {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 75%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 8px 12px;
+    background: linear-gradient(45deg, #00ddff, #8400ff);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #8400ff, #00ddff);
+    transform: scale(1.1);
+}
+
 .listing {
     display: flex;
     flex-direction: column;
@@ -36,7 +86,7 @@
     padding: 10px 15px;
     margin-top: 10px;
     text-decoration: none;
-    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    background: linear-gradient(45deg, #00ddff, #8400ff);
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -45,6 +95,22 @@
 }
 
 .listing button:hover {
-    background: linear-gradient(45deg, #ff0080, #ff8c00);
+    background: linear-gradient(45deg, #8400ff, #00ddff);
     transform: scale(1.1);
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+}
+
+@media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }
 }

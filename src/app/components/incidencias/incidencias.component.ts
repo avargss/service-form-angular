@@ -12,12 +12,12 @@ import { IncidenciasService } from '../../services/incidencias.service';
 })
 export class IncidenciasComponent {
 
-  @Input() incidencia!: Incidencias;
+  @Input() filteredIncidenciasList: Incidencias[] = [];
   @Output() incidenciaSeleccionada = new EventEmitter<Incidencias>();
 
   incidenciasList: Incidencias[] = [];
   incidenciasService: IncidenciasService = inject(IncidenciasService);
-  filteredIncidenciasList: Incidencias[] = [];
+  
 
   constructor() {
     this.incidenciasService.getAllIncidencias().then((incidenciasList: Incidencias[]) => {
@@ -44,12 +44,21 @@ export class IncidenciasComponent {
 
   }
 
-  selectIncidencia() {
-    console.log('Incidencia seleccionada', this.incidencia);
-
-    this.incidenciaSeleccionada.emit(this.incidencia);
+  selectIncidencia(incidencia: Incidencias) {
+    this.incidenciaSeleccionada.emit(incidencia);
   }
 
-  
+  getBackgroundColor(categoria: string): string {
+    switch (categoria) {
+      case 'Log':
+        return 'rgba(88, 200, 210, 0.548)';
+      case 'Warn':
+        return 'rgba(253, 236, 128, 0.475)';
+      case 'Error':
+        return 'rgba(255, 133, 133, 0.552)';
+      default:
+        return 'white';
+    }
+  }
 
 }
