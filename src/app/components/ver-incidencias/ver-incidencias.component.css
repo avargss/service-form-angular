@@ -73,3 +73,19 @@ h1 {
     margin: 5px 0;
 }
 
+.counters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.counter i {
+    margin-right: 8px;
+    font-size: 24px;
+}

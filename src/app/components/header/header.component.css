@@ -4,7 +4,7 @@ header {
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
+  justify-content: space-between; /* Cambia a space-between para separar el logo de los botones */
   align-items: center;
   top: 0;
   left: 0;
@@ -17,6 +17,7 @@ header .logo {
   align-items: center;
   text-decoration: none;
   color: white;
+  margin-right: auto; /* Añade margen automático a la derecha para empujar los botones hacia la derecha */
 }
 
 header img {
@@ -28,6 +29,11 @@ header h1 {
   font-size: 2.5rem; /* Aumenta el tamaño de la fuente */
   font-weight: bold;
   text-align: center; /* Centra el texto */
+}
+
+header .buttons {
+  display: flex;
+  gap: 1rem; /* Añade espacio entre los botones */
 }
 
 header button {

@@ -101,37 +101,37 @@
       "createdAt": "2024-01-10T10:00:00Z"
     },
     {
-      "id": "5a58",
+      "id": "6da8",
       "empleado": "Juan Rodríguez",
-      "nombre": "admin",
+      "nombre": "Incidencia de prueba 1",
       "tipo": "Reparación",
-      "precio": 119.99,
-      "categoria": "Error",
-      "descripcion": "we",
-      "fechaIncidenciaIncidencia": "2025-02-05T20:26:45.000Z",
-      "createdAt": "2025-02-13T20:27:08.209Z"
-    },
-    {
-      "id": "040e",
-      "empleado": "María García",
-      "nombre": "admin",
-      "tipo": "Mantenimiento",
-      "precio": 10.1,
+      "precio": 120,
       "categoria": "Log",
-      "descripcion": "dfgh",
-      "fechaIncidenciaIncidencia": "2025-02-21T20:26:45.000Z",
-      "createdAt": "2025-02-13T20:27:47.194Z"
+      "descripcion": "Prueba incidencia Log",
+      "fechaIncidencia": "2025-02-10T23:16:37.000Z",
+      "createdAt": "2025-02-13T23:18:52.839Z"
     },
     {
-      "id": "5084",
-      "empleado": "Ana Martínez",
-      "nombre": "admin2",
+      "id": "edf2",
+      "empleado": "María García",
+      "nombre": "Incidencia de prueba 2",
       "tipo": "Limpieza",
-      "precio": 10.1,
+      "precio": 130,
       "categoria": "Warn",
-      "descripcion": "asdf",
-      "fechaIncidenciaIncidencia": "2025-02-25T21:01:48.000Z",
-      "createdAt": "2025-02-13T21:02:04.331Z"
+      "descripcion": "Prueba incidencia Warn",
+      "fechaIncidencia": "2025-02-04T23:16:37.000Z",
+      "createdAt": "2025-02-13T23:20:00.252Z"
+    },
+    {
+      "id": "e3f6",
+      "empleado": "Ana Martínez",
+      "nombre": "Incidencia de prueba 3",
+      "tipo": "Otros",
+      "precio": 420,
+      "categoria": "Error",
+      "descripcion": "Prueba incidencia Error",
+      "fechaIncidencia": "2025-02-07T23:16:37.000Z",
+      "createdAt": "2025-02-13T23:20:35.723Z"
     }
   ],
   "empleados": [

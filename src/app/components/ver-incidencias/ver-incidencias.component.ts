@@ -17,6 +17,9 @@ export class VerIncidenciasComponent {
   filteredIncidenciasList: Incidencias[] = [];
   incidenciaSeleccionada: Incidencias | null = null;
   categorias: string[] = [];
+  logCount: number = 0;
+  warnCount: number = 0;
+  errorCount: number = 0;
 
   constructor() {
     // Se suscribe al observable de incidenciasService para obtener las incidencias
@@ -24,6 +27,7 @@ export class VerIncidenciasComponent {
       (incidenciasList) => {
         this.incidenciasList = incidenciasList;
         this.filteredIncidenciasList = incidenciasList;
+        this.updateCounts();
       },
       (error) => {
         console.error('Error al obtener las incidencias:', error);
@@ -34,12 +38,14 @@ export class VerIncidenciasComponent {
   filterResults(text: string) {
     if (!text) {
       this.filteredIncidenciasList = this.incidenciasList;
+      this.updateCounts();
       return;
     }
 
     this.filteredIncidenciasList = this.incidenciasList.filter((incid) =>
       incid?.categoria.toLowerCase().includes(text.toLowerCase())
     );
+    this.updateCounts();
   }
 
   selectIncidencia(incidencia: Incidencias) {
@@ -63,4 +69,11 @@ export class VerIncidenciasComponent {
         return 'white';
     }
   }
+
+  updateCounts() {
+    this.logCount = this.filteredIncidenciasList.filter(incidencia => incidencia.categoria === 'Log').length;
+    this.warnCount = this.filteredIncidenciasList.filter(incidencia => incidencia.categoria === 'Warn').length;
+    this.errorCount = this.filteredIncidenciasList.filter(incidencia => incidencia.categoria === 'Error').length;
+  }
+
 }

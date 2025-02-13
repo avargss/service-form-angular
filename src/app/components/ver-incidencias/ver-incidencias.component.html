@@ -17,4 +17,17 @@
     <button class="primary" (click)="closeIncidencia()">Cerrar</button>
 </section>
 
-<app-incidencias [filteredIncidenciasList]="filteredIncidenciasList" (incidenciaSeleccionada)="selectIncidencia($event)"></app-incidencias>
+<section class="counters">
+    <div class="counter">
+        <i class="bi bi-clipboard-check text-primary me-2"></i> Log: {{ logCount }}
+    </div>
+    <div class="counter">
+        <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i> Warn: {{ warnCount }}
+    </div>
+    <div class="counter">
+        <i class="bi bi-exclamation-diamond-fill text-danger me-2"></i> Error: {{ errorCount }}
+    </div>
+</section>
+
+<app-incidencias [filteredIncidenciasList]="filteredIncidenciasList"
+    (incidenciaSeleccionada)="selectIncidencia($event)"></app-incidencias>
