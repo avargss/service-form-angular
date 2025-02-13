@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { CrearIncidenciaComponent } from './components/crear-incidencia/crear-incidencia.component';
+import { Formulario } from './components/formulario/formulario.component';
 import { VerIncidenciasComponent } from './components/ver-incidencias/ver-incidencias.component';
 
 export const routes: Routes = [
@@ -10,9 +10,9 @@ export const routes: Routes = [
         title: 'Home page',
     },
     {
-        path: 'registrar-incidencia',
-        component: CrearIncidenciaComponent,
-        title: 'Crear incidencia',
+        path: 'formulario',
+        component: Formulario,
+        title: 'Formulario',
     },
     {
         path: 'incidentes',

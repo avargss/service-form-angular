@@ -1,8 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IncidenciasComponent } from "../incidencias/incidencias.component";
-import { Incidencias } from '../../model/incidencias';
-import { IncidenciasService } from '../../services/incidencias.service';
 import { RouterModule } from '@angular/router';
 
 @Component({

@@ -12,7 +12,8 @@
     <p>Precio: {{ incidenciaSeleccionada.precio }}€</p>
     <p>Categoría: {{ incidenciaSeleccionada.categoria }}</p>
     <p>Descripción: {{ incidenciaSeleccionada.descripcion }}</p>
-    <p>Fecha: {{ incidenciaSeleccionada.fecha }}</p>
+    <p>Fecha de la incidencia: {{ incidenciaSeleccionada.fechaIncidencia | date:'yyyy-MM-dd'}}</p>
+    <p>Fecha de registro de la incidencia: {{incidenciaSeleccionada.createdAt | date:'yyyy-MM-dd' }}</p>
     <button class="primary" (click)="closeIncidencia()">Cerrar</button>
 </section>
 

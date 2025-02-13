@@ -17,13 +17,19 @@ export class IncidenciasComponent {
 
   incidenciasList: Incidencias[] = [];
   incidenciasService: IncidenciasService = inject(IncidenciasService);
-  
+
 
   constructor() {
-    this.incidenciasService.getAllIncidencias().then((incidenciasList: Incidencias[]) => {
-      this.incidenciasList = incidenciasList;
-      this.filteredIncidenciasList = incidenciasList;
-    });
+    // Se suscribe al observable de incidenciasService para obtener las incidencias
+    this.incidenciasService.getAllIncidencias().subscribe(
+      (incidenciasList) => {
+        this.incidenciasList = incidenciasList;
+        this.filteredIncidenciasList = incidenciasList;
+      },
+      (error) => {
+        console.error('Error al obtener las incidencias:', error);
+      }
+    );
   }
 
   filterResults(text: string) {

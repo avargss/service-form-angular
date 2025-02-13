@@ -2,14 +2,13 @@ import { Component, inject } from '@angular/core';
 import { Incidencias } from '../../model/incidencias';
 import { IncidenciasService } from '../../services/incidencias.service';
 import { IncidenciasComponent } from "../incidencias/incidencias.component";
-import { NgIf, NgStyle } from '@angular/common';
-import { LoggerService } from '../../services/logger.service';
+import { DatePipe, NgIf, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-ver-incidencias',
-  imports: [NgIf, NgStyle, IncidenciasComponent],
+  imports: [IncidenciasComponent, NgIf, NgStyle, DatePipe],
   templateUrl: './ver-incidencias.component.html',
-  styleUrl: './ver-incidencias.component.css'
+  styleUrls: ['./ver-incidencias.component.css']
 })
 export class VerIncidenciasComponent {
 
@@ -18,18 +17,18 @@ export class VerIncidenciasComponent {
   filteredIncidenciasList: Incidencias[] = [];
   incidenciaSeleccionada: Incidencias | null = null;
   categorias: string[] = [];
-  
 
-  constructor(private logger: LoggerService) {
-    this.incidenciasService.getAllIncidencias().then((incidenciasList: Incidencias[]) => {
-      this.incidenciasList = incidenciasList;
-      this.filteredIncidenciasList = incidenciasList;
-      this
-    });
-
-    // Implementar contador de incidencias en el navbar. Tengo que investigar como hacerlo
-    this.logger.log('Incidencias cargadas');
-
+  constructor() {
+    // Se suscribe al observable de incidenciasService para obtener las incidencias
+    this.incidenciasService.getAllIncidencias().subscribe(
+      (incidenciasList) => {
+        this.incidenciasList = incidenciasList;
+        this.filteredIncidenciasList = incidenciasList;
+      },
+      (error) => {
+        console.error('Error al obtener las incidencias:', error);
+      }
+    );
   }
 
   filterResults(text: string) {
@@ -39,19 +38,11 @@ export class VerIncidenciasComponent {
     }
 
     this.filteredIncidenciasList = this.incidenciasList.filter((incid) =>
-      incid?.categoria.toLowerCase().includes(text.toLowerCase()),
+      incid?.categoria.toLowerCase().includes(text.toLowerCase())
     );
-
-
-    /* this.incidenciasService.getAllIncidencias().then((listaIncidencias: Incidencias[]) => {
-      this.incidenciasList = listaIncidencias;
-      this.filteredIncidenciasList = listaIncidencias;
-    }); */
-
   }
 
   selectIncidencia(incidencia: Incidencias) {
-    
     this.incidenciaSeleccionada = incidencia;
     console.log('Incidencia seleccionadad llega', this.incidenciaSeleccionada);
   }
@@ -72,5 +63,4 @@ export class VerIncidenciasComponent {
         return 'white';
     }
   }
-
 }
