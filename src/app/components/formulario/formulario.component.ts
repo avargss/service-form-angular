@@ -63,7 +63,7 @@ export class Formulario implements OnInit {
       if (empleadoGuardado) {
         this.nombreEmpleado = empleadoGuardado;
 
-        // Actualiza el valor del campo 'empleado' en el formulario con el valor almacenado en localStorage
+        // Sirve para actualizar el valor del campo 'empleado' en el formulario con el valor almacenado en localStorage
         this.form.patchValue({ empleado: empleadoGuardado });
       }
     }
