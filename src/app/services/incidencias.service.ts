@@ -21,13 +21,21 @@ export class IncidenciasService {
     return this.http.get<Incidencias[]>(this.incidenciasUrl);
   }
 
-  addIncidencia(nuevaIncidencia: Incidencias) {
-    return this.http.post(this.incidenciasUrl, nuevaIncidencia);
-  }
-
   guardarIncidencia(incidencia: any): Observable<any> {
     return this.http.post(this.incidenciasUrl, incidencia);
   }
+
+  editarIncidencia(incidencia: Incidencias): Observable<any> {
+    return this.http.put(`${this.incidenciasUrl}/${incidencia.id}`, incidencia);
+  }
+
+  borrarIncidencia(id: number): Observable<any> {
+    return this.http.delete(`${this.incidenciasUrl}/${id}`);
+  }
+
+  /* addIncidencia(nuevaIncidencia: Incidencias) {
+    return this.http.post(this.incidenciasUrl, nuevaIncidencia);
+  } */
 
   /* async getAllIncidencias(): Promise<Incidencias[]> {
     const data = await fetch(this.incidenciasUrl);
