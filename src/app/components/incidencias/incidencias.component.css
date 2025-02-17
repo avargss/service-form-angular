@@ -15,13 +15,14 @@ table {
     text-align: left;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px 15px;
     border: 1px solid #ddd;
 }
 
 table th {
-    background-color: #f4f4f4;    
+    background-color: #f4f4f4;
 }
 
 table tr:nth-child(even) {
@@ -32,9 +33,17 @@ table tr:hover {
     background-color: #f1f1f1;
 }
 
+td {
+    text-align: center;
+}
+
+table td button {
+    margin-right: 10px;
+}
+
 button {
     padding: 8px 12px;
-    background-color: #af50e7;
+    background-color: #6c92de;
     color: white;
     font-weight: bold;
     border-radius: 8px;

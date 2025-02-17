@@ -54,6 +54,29 @@ export class IncidenciasComponent {
     this.incidenciaSeleccionada.emit(incidencia);
   }
 
+  editarIncidencia(incidencia: Incidencias) {
+    this.incidenciasService.editarIncidencia(incidencia).subscribe(
+      (response) => {
+        console.log('Entra en editar:', response);
+      },
+      (error) => {
+        console.error('Error al editar la incidencia:', error);
+      }
+    );
+  }
+
+  borrarIncidencia(id: number) {
+    this.incidenciasService.borrarIncidencia(id).subscribe(
+      (response) => {
+        console.log('Incidencia borrada correctamente:', response);
+        this.incidenciasList = this.incidenciasList.filter((incid) => incid.id !== id);
+        this.filteredIncidenciasList = this.filteredIncidenciasList.filter((incid) => incid.id !== id);
+      },
+      (error) => {
+        console.error('Error al borrar la incidencia:', error);
+      });
+  }
+
   getBackgroundColor(categoria: string): string {
     switch (categoria) {
       case 'Log':

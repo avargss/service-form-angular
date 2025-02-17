@@ -18,6 +18,7 @@ export class Formulario implements OnInit {
   empleados: Empleados[] = [];
   form: FormGroup;
   nombreEmpleado: string = '';
+  //incidenciaGuardada: string = '';
 
   constructor(private fb: FormBuilder, private datosService: DatosService, private incidenciasService: IncidenciasService, private observableService: ObservableService) {
 
@@ -60,6 +61,7 @@ export class Formulario implements OnInit {
 
     if (typeof localStorage !== 'undefined') {
       const empleadoGuardado = localStorage.getItem('empleado');
+      //const incidenciaGuardada = localStorage.getItem('incidencia');
       if (empleadoGuardado) {
         this.nombreEmpleado = empleadoGuardado;
 
@@ -67,12 +69,15 @@ export class Formulario implements OnInit {
         this.form.patchValue({ empleado: empleadoGuardado });
       }
     }
-
   }
 
+  // Puedo guardar varios objetos en localStorage, pero no puedo guardar un objeto con varios campos
+  // localStorage.setItem('empleado', JSON.stringify(this.nombreEmpleado));
   obtenerNombreEmpleado(): void {
     this.nombreEmpleado = this.form.value.empleado;
+    //this.incidenciaGuardada = this.form.value.incidencia;
     localStorage.setItem('empleado', this.nombreEmpleado);
+    //localStorage.setItem('incidencia', this.incidenciaGuardada);
     this.observableService.setNombreDelTitulo(this.nombreEmpleado);
   }
 

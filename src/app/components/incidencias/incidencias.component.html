@@ -16,7 +16,12 @@
         <td>{{ incidencia.tipo }}</td>
         <td>{{ incidencia.precio }}€</td>
         <td>{{ incidencia.categoria }}</td>
-        <td><button (click)="selectIncidencia(incidencia);">Gestionar</button></td>
+        <td><button (click)="selectIncidencia(incidencia);">Gestionar</button>
+          <a [routerLink]="['/incidentes/', incidencia.id]">
+            <button (click)="editarIncidencia(incidencia);">Editar</button>
+          </a>
+          <button (click)="borrarIncidencia(incidencia.id);">Borrar</button>
+        </td>
       </tr>
     </tbody>
   </table>
