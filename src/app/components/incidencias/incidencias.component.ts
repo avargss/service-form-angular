@@ -18,7 +18,6 @@ export class IncidenciasComponent {
   incidenciasList: Incidencias[] = [];
   incidenciasService: IncidenciasService = inject(IncidenciasService);
 
-
   constructor() {
     // Se suscribe al observable de incidenciasService para obtener las incidencias
     this.incidenciasService.getAllIncidencias().subscribe(
@@ -41,7 +40,6 @@ export class IncidenciasComponent {
     this.filteredIncidenciasList = this.incidenciasList.filter((indic) =>
       indic?.categoria.toLowerCase().includes(text.toLowerCase()),
     );
-
 
     /* this.productsService.getAllProducts().then((productsList: Products[]) => {
       this.productsList = productsList;

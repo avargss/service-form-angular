@@ -31,3 +31,8 @@
 
 <app-incidencias [filteredIncidenciasList]="filteredIncidenciasList"
     (incidenciaSeleccionada)="selectIncidencia($event)"></app-incidencias>
+
+<!-- incidenciaSeleccionada hace referencia al Output de incidencias.component.ts 
+ Este objeto llama al método selectIncidencia de este componente, que recibe la incidencia
+ seleccionada del método selectIncidencia del componente incidencias, y ya la muestra en 
+ el html-->
