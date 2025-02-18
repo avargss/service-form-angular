@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "startAll": "concurrently \" json-server --watch db.json\" \"ng serve\"",
+    "start2json": "concurrently \"json-server --watch users.json --port 3001\" \"json-server --watch products.json --port 3002\" \"ng serve\"", 
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
