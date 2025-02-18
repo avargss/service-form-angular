@@ -39,7 +39,7 @@ export class IncidenciasComponent {
 
     this.filteredIncidenciasList = this.incidenciasList.filter((indic) =>
       indic?.categoria.toLowerCase().includes(text.toLowerCase()),
-    );
+    ).reverse();
 
     /* this.productsService.getAllProducts().then((productsList: Products[]) => {
       this.productsList = productsList;
@@ -63,7 +63,7 @@ export class IncidenciasComponent {
     );
   }
 
-  borrarIncidencia(id: number) {
+  borrarIncidencia(id: string) {
     this.incidenciasService.borrarIncidencia(id).subscribe(
       (response) => {
         console.log('Incidencia borrada correctamente:', response);

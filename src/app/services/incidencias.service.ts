@@ -7,12 +7,13 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class IncidenciasService {
+  private incidencia: Incidencias[] = [];
 
   incidenciasUrl = 'http://localhost:3000/incidencias';
 
   private incidenciasSubject = new BehaviorSubject<Incidencias[]>([]);
   incidencias$: Observable<Incidencias[]> = this.incidenciasSubject.asObservable();
-  
+
   http = inject(HttpClient);
   constructor() { }
 
@@ -29,7 +30,7 @@ export class IncidenciasService {
     return this.http.put(`${this.incidenciasUrl}/${incidencia.id}`, incidencia);
   }
 
-  borrarIncidencia(id: number): Observable<any> {
+  borrarIncidencia(id: string): Observable<any> {
     return this.http.delete(`${this.incidenciasUrl}/${id}`);
   }
 

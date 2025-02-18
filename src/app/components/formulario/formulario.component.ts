@@ -16,6 +16,7 @@ import { ObservableService } from '../../services/observable.service';
 })
 export class Formulario implements OnInit {
   empleados: Empleados[] = [];
+  incidencia: Incidencias[] = [];
   form: FormGroup;
   nombreEmpleado: string = '';
   //incidenciaGuardada: string = '';
@@ -59,6 +60,10 @@ export class Formulario implements OnInit {
       }
     );
 
+    this.incidenciasService.getAllIncidencias().subscribe((incidencia) => {
+      this.incidencia = incidencia;
+    });
+
     if (typeof localStorage !== 'undefined') {
       const empleadoGuardado = localStorage.getItem('empleado');
       //const incidenciaGuardada = localStorage.getItem('incidencia');
@@ -91,8 +96,14 @@ export class Formulario implements OnInit {
     if (this.form.valid) {
       // Mirar como guardar todos los datos como jn
       const nuevaIncidencia: Incidencias = {
-        ...this.form.value,
-        createdAt: new Date()
+        id: (Number(this.incidencia[this.incidencia.length - 1].id) + 1).toString(),
+        nombre: this.form.value.nombre,
+        precio: this.form.value.precio,
+        tipo: this.form.value.tipo,
+        categoria: this.form.value.categoria,
+        descripcion: this.form.value.descripcion,
+        fechaIncidencia: this.form.value.fechaIncidencia,
+        createdAt: new Date(),
       };
 
       this.incidenciasService.guardarIncidencia(nuevaIncidencia).subscribe(

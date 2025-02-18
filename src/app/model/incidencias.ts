@@ -1,5 +1,5 @@
 export interface Incidencias {
-    id: number;
+    id: string;
     nombre: string;
     precio: number;
     tipo: "Mantenimiento" | "Reparación" | "Limpieza" | "Instalación" | "Configuración" | "Otros";

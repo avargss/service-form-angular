@@ -101,26 +101,14 @@
       "createdAt": "2024-01-10T10:00:00Z"
     },
     {
-      "id": "6da8",
-      "empleado": "Juan Rodríguez",
-      "nombre": "Incidencia de prueba 1",
-      "tipo": "Reparación",
-      "precio": 120,
+      "id": "11",
+      "nombre": "admin",
+      "precio": 5,
+      "tipo": "Mantenimiento",
       "categoria": "Log",
-      "descripcion": "Prueba incidencia Log",
-      "fechaIncidencia": "2025-02-10T23:16:37.000Z",
-      "createdAt": "2025-02-13T23:18:52.839Z"
-    },
-    {
-      "id": "edf2",
-      "empleado": "María García",
-      "nombre": "Incidencia de prueba 2",
-      "tipo": "Limpieza",
-      "precio": 130,
-      "categoria": "Warn",
-      "descripcion": "Prueba incidencia Warn",
-      "fechaIncidencia": "2025-02-04T23:16:37.000Z",
-      "createdAt": "2025-02-13T23:20:00.252Z"
+      "descripcion": "tyu",
+      "fechaIncidencia": "2025-02-13T18:01:22.000Z",
+      "createdAt": "2025-02-18T18:01:39.794Z"
     }
   ],
   "empleados": [
