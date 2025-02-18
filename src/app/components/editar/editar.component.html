@@ -1,1 +1,62 @@
-<p>editar works!</p>
+<form [formGroup]="form" (submit)="submit()">
+    <div>
+        <label for="nombre">Nombre de la Incidencia: </label>
+        <input id="nombre" name="nombre" formControlName="nombre" type="text" class="form-control" />
+        <div *ngIf="form.get('nombre')?.invalid && form.get('nombre')?.touched" class="text-danger">
+            El campo nombre es requerido.
+        </div>
+    </div>
+
+    <div>
+        <label for="tipo">Tipo: </label>
+        <select id="tipo" name="tipo" formControlName="tipo" class="form-select">
+            <option value="Mantenimiento">Mantenimiento</option>
+            <option value="Reparación">Reparación</option>
+            <option value="Limpieza">Limpieza</option>
+            <option value="Instalación">Instalación</option>
+            <option value="Configuración">Configuración</option>
+            <option value="Otros">Otros</option>
+        </select>
+        <div *ngIf="form.get('tipo')?.invalid && form.get('tipo')?.touched" class="text-danger">
+            El campo tipo es requerido.
+        </div>
+    </div>
+
+    <div>
+        <label for="precio">Precio: </label>
+        <input id="precio" name="precio" formControlName="precio" type="number" class="form-control" />
+        <div *ngIf="form.get('precio')?.invalid && form.get('precio')?.touched" class="text-danger">
+            El campo precio es requerido y debe ser mayor o igual a 0.
+        </div>
+    </div>
+
+    <div>
+        <label for="categoria">Categoría: </label>
+        <select id="categoria" name="categoria" formControlName="categoria" class="form-select">
+            <option value="Log">Log</option>
+            <option value="Warn">Warn</option>
+            <option value="Error">Error</option>
+        </select>
+        <div *ngIf="form.get('categoria')?.invalid && form.get('categoria')?.touched" class="text-danger">
+            El campo categoría es requerido.
+        </div>
+    </div>
+
+    <div>
+        <label for="descripcion">Descripción: </label>
+        <textarea id="descripcion" name="descripcion" formControlName="descripcion" class="form-control"></textarea>
+        <div *ngIf="form.get('descripcion')?.invalid && form.get('descripcion')?.touched" class="text-danger">
+            El campo descripción es requerido.
+        </div>
+    </div>
+
+    <div>
+        <label for="fechaIncidencia">Fecha: </label>
+        <input id="fechaIncidencia" name="fechaIncidencia" formControlName="fechaIncidencia" type="text"
+            class="form-control" placeholder="Datepicker" bsDatepicker />
+        <div *ngIf="form.get('fechaIncidencia')?.invalid && form.get('fechaIncidencia')?.touched" class="text-danger">
+            La fecha no puede ser posterior al día actual.
+        </div>
+    </div>
+    <button class="primary" type="submit">Actualizar Incidencia</button>
+</form>

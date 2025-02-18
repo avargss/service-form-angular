@@ -1,5 +1,5 @@
 export interface Incidencias {
-    id: number;
+    id: string;
     nombre: string;
     precio: number;
     tipo: "Mantenimiento" | "Reparación" | "Limpieza" | "Instalación" | "Configuración" | "Otros";
@@ -7,5 +7,5 @@ export interface Incidencias {
     descripcion: string;
     fechaIncidencia: string;
     createdAt: Date;
-    // Implementar fecha de creación aquí, en el json y en el backend
+    empleado: string;
 }

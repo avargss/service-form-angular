@@ -10,6 +10,7 @@ import { DatePipe, NgIf, NgStyle } from '@angular/common';
   templateUrl: './ver-incidencias.component.html',
   styleUrls: ['./ver-incidencias.component.css']
 })
+
 export class VerIncidenciasComponent {
 
   incidenciasList: Incidencias[] = [];

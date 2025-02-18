@@ -22,6 +22,10 @@ export class IncidenciasService {
     return this.http.get<Incidencias[]>(this.incidenciasUrl);
   }
 
+  getIncidenciaById(id: string): Observable<Incidencias> {
+    return this.http.get<Incidencias>(`${this.incidenciasUrl}/${id}`);
+  }
+
   guardarIncidencia(incidencia: any): Observable<any> {
     return this.http.post(this.incidenciasUrl, incidencia);
   }
@@ -30,7 +34,7 @@ export class IncidenciasService {
     return this.http.put(`${this.incidenciasUrl}/${incidencia.id}`, incidencia);
   }
 
-  borrarIncidencia(id: number): Observable<any> {
+  borrarIncidencia(id: string): Observable<any> {
     return this.http.delete(`${this.incidenciasUrl}/${id}`);
   }
 

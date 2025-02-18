@@ -3,6 +3,7 @@
     <thead>
       <tr>
         <th>Nombre</th>
+        <th>Empleado</th>
         <th>Tipo</th>
         <th>Precio</th>
         <th>Categoría</th>
@@ -13,12 +14,13 @@
       <tr *ngFor="let incidencia of filteredIncidenciasList"
         [ngStyle]="{'background-color': getBackgroundColor(incidencia.categoria)}">
         <td>{{ incidencia.nombre }}</td>
+        <td>{{ incidencia.empleado }}</td>
         <td>{{ incidencia.tipo }}</td>
         <td>{{ incidencia.precio }}€</td>
         <td>{{ incidencia.categoria }}</td>
         <td><button (click)="selectIncidencia(incidencia);">Gestionar</button>
           <a [routerLink]="['/incidentes/', incidencia.id]">
-            <button (click)="editarIncidencia(incidencia);">Editar</button>
+            <button>Editar</button>
           </a>
           <button (click)="borrarIncidencia(incidencia.id);">Borrar</button>
         </td>

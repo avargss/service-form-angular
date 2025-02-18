@@ -8,6 +8,7 @@
 <section *ngIf="incidenciaSeleccionada" class="selected-incidencia"
     [ngStyle]="{'background-color': getBackgroundColor(incidenciaSeleccionada.categoria)}">
     <h2>{{ incidenciaSeleccionada.nombre }}</h2>
+    <p>Empleado: {{ incidenciaSeleccionada.empleado }}</p>
     <p>Tipo: {{ incidenciaSeleccionada.tipo }}</p>
     <p>Precio: {{ incidenciaSeleccionada.precio }}€</p>
     <p>Categoría: {{ incidenciaSeleccionada.categoria }}</p>
@@ -35,4 +36,5 @@
 <!-- incidenciaSeleccionada hace referencia al Output de incidencias.component.ts 
  Este objeto llama al método selectIncidencia de este componente, que recibe la incidencia
  seleccionada del método selectIncidencia del componente incidencias, y ya la muestra en 
- el html-->
+ el html -->
+

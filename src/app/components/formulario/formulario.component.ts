@@ -7,6 +7,7 @@ import { DatosService } from '../../services/datos.service';
 import { IncidenciasService } from '../../services/incidencias.service';
 import { Incidencias } from '../../model/incidencias';
 import { ObservableService } from '../../services/observable.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulario',
@@ -21,7 +22,7 @@ export class Formulario implements OnInit {
   nombreEmpleado: string = '';
   //incidenciaGuardada: string = '';
 
-  constructor(private fb: FormBuilder, private datosService: DatosService, private incidenciasService: IncidenciasService, private observableService: ObservableService) {
+  constructor(private fb: FormBuilder, private datosService: DatosService, private incidenciasService: IncidenciasService, private observableService: ObservableService, private router: Router) {
 
     this.form = this.fb.group({
       empleado: ['', Validators.required],
@@ -88,6 +89,8 @@ export class Formulario implements OnInit {
 
   submit(): void {
 
+    this.router.navigate(['/']);
+
     if (this.form.invalid) {
       this.form.markAllAsTouched();
       return;
@@ -96,7 +99,7 @@ export class Formulario implements OnInit {
     if (this.form.valid) {
       // Mirar como guardar todos los datos como jn
       const nuevaIncidencia: Incidencias = {
-        id: (this.incidencia[this.incidencia.length - 1].id) + 1,
+        id: (Number(this.incidencia[this.incidencia.length - 1].id) + 1).toString(),
         nombre: this.form.value.nombre,
         precio: this.form.value.precio,
         tipo: this.form.value.tipo,
@@ -104,6 +107,7 @@ export class Formulario implements OnInit {
         descripcion: this.form.value.descripcion,
         fechaIncidencia: this.form.value.fechaIncidencia,
         createdAt: new Date(),
+        empleado: this.form.value.empleado,
       };
 
       this.incidenciasService.guardarIncidencia(nuevaIncidencia).subscribe(

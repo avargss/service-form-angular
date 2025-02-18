@@ -41,29 +41,14 @@ export class IncidenciasComponent {
       indic?.categoria.toLowerCase().includes(text.toLowerCase()),
     ).reverse();
 
-    /* this.productsService.getAllProducts().then((productsList: Products[]) => {
-      this.productsList = productsList;
-      this.filteredProductsList = productsList;
-    }); */
-
   }
 
   selectIncidencia(incidencia: Incidencias) {
     this.incidenciaSeleccionada.emit(incidencia);
   }
 
-  editarIncidencia(incidencia: Incidencias) {
-    this.incidenciasService.editarIncidencia(incidencia).subscribe(
-      (response) => {
-        console.log('Entra en editar:', response);
-      },
-      (error) => {
-        console.error('Error al editar la incidencia:', error);
-      }
-    );
-  }
-
-  borrarIncidencia(id: number) {
+  borrarIncidencia(id: string) {
+    // Se le pasa la id al service como String para que no de error de rutas y pueda borrar
     this.incidenciasService.borrarIncidencia(id).subscribe(
       (response) => {
         console.log('Incidencia borrada correctamente:', response);
