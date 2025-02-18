@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { IncidenciasService } from '../../services/incidencias.service';
 import { Incidencias } from '../../model/incidencias';
 import { ActivatedRoute, Router } from '@angular/router';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @Component({
   selector: 'app-editar',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, BsDatepickerModule],
   templateUrl: './editar.component.html',
   styleUrls: ['./editar.component.css']
 })
