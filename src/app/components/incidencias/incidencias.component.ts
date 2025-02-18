@@ -63,7 +63,7 @@ export class IncidenciasComponent {
     );
   }
 
-  borrarIncidencia(id: string) {
+  borrarIncidencia(id: number) {
     this.incidenciasService.borrarIncidencia(id).subscribe(
       (response) => {
         console.log('Incidencia borrada correctamente:', response);

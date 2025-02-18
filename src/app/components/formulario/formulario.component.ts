@@ -96,7 +96,7 @@ export class Formulario implements OnInit {
     if (this.form.valid) {
       // Mirar como guardar todos los datos como jn
       const nuevaIncidencia: Incidencias = {
-        id: (Number(this.incidencia[this.incidencia.length - 1].id) + 1).toString(),
+        id: (this.incidencia[this.incidencia.length - 1].id) + 1,
         nombre: this.form.value.nombre,
         precio: this.form.value.precio,
         tipo: this.form.value.tipo,

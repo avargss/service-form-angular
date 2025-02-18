@@ -1,7 +1,7 @@
 {
   "incidencias": [
     {
-      "id": "1",
+      "id": 1,
       "nombre": "Mantenimiento Preventivo",
       "tipo": "Mantenimiento",
       "precio": 50,
@@ -11,7 +11,7 @@
       "createdAt": "2024-01-01T10:00:00Z"
     },
     {
-      "id": "2",
+      "id": 2,
       "nombre": "Reparación de Pantalla",
       "tipo": "Reparación",
       "precio": 120,
@@ -21,7 +21,7 @@
       "createdAt": "2024-01-02T10:00:00Z"
     },
     {
-      "id": "3",
+      "id": 3,
       "nombre": "Limpieza de Sistema",
       "tipo": "Limpieza",
       "precio": 30,
@@ -31,7 +31,7 @@
       "createdAt": "2024-01-03T10:00:00Z"
     },
     {
-      "id": "4",
+      "id": 4,
       "nombre": "Instalación de Software",
       "tipo": "Instalación",
       "precio": 40,
@@ -41,7 +41,7 @@
       "createdAt": "2024-01-04T10:00:00Z"
     },
     {
-      "id": "5",
+      "id": 5,
       "nombre": "Configuración de Red",
       "tipo": "Configuración",
       "precio": 70,
@@ -51,7 +51,7 @@
       "createdAt": "2024-01-05T10:00:00Z"
     },
     {
-      "id": "6",
+      "id": 6,
       "nombre": "Reparación de Hardware",
       "tipo": "Reparación",
       "precio": 150,
@@ -61,7 +61,7 @@
       "createdAt": "2024-01-06T10:00:00Z"
     },
     {
-      "id": "7",
+      "id": 7,
       "nombre": "Mantenimiento Correctivo",
       "tipo": "Mantenimiento",
       "precio": 60,
@@ -71,7 +71,7 @@
       "createdAt": "2024-01-07T10:00:00Z"
     },
     {
-      "id": "8",
+      "id": 8,
       "nombre": "Limpieza de Virus",
       "tipo": "Limpieza",
       "precio": 45,
@@ -81,7 +81,7 @@
       "createdAt": "2024-01-08T10:00:00Z"
     },
     {
-      "id": "9",
+      "id": 9,
       "nombre": "Instalación de Hardware",
       "tipo": "Instalación",
       "precio": 80,
@@ -91,7 +91,7 @@
       "createdAt": "2024-01-09T10:00:00Z"
     },
     {
-      "id": "10",
+      "id": 10,
       "nombre": "Otros Servicios",
       "tipo": "Otros",
       "precio": 100,
@@ -101,7 +101,7 @@
       "createdAt": "2024-01-10T10:00:00Z"
     },
     {
-      "id": "11",
+      "id": 11,
       "nombre": "admin",
       "precio": 5,
       "tipo": "Mantenimiento",
@@ -109,6 +109,16 @@
       "descripcion": "tyu",
       "fechaIncidencia": "2025-02-13T18:01:22.000Z",
       "createdAt": "2025-02-18T18:01:39.794Z"
+    },
+    {
+      "id": 12,
+      "nombre": "fghj",
+      "precio": 456,
+      "tipo": "Instalación",
+      "categoria": "Error",
+      "descripcion": "456",
+      "fechaIncidencia": "2025-02-17T18:10:09.000Z",
+      "createdAt": "2025-02-18T18:10:35.043Z"
     }
   ],
   "empleados": [

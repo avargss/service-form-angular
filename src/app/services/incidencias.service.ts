@@ -30,7 +30,7 @@ export class IncidenciasService {
     return this.http.put(`${this.incidenciasUrl}/${incidencia.id}`, incidencia);
   }
 
-  borrarIncidencia(id: string): Observable<any> {
+  borrarIncidencia(id: number): Observable<any> {
     return this.http.delete(`${this.incidenciasUrl}/${id}`);
   }
 
