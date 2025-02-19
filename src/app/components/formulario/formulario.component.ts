@@ -66,15 +66,19 @@ export class Formulario implements OnInit {
     });
 
     if (typeof localStorage !== 'undefined') {
-      const empleadoGuardado = localStorage.getItem('empleado');
-      //const incidenciaGuardada = localStorage.getItem('incidencia');
-      if (empleadoGuardado) {
-        this.nombreEmpleado = empleadoGuardado;
-
-        // Sirve para actualizar el valor del campo 'empleado' en el formulario con el valor almacenado en localStorage
-        this.form.patchValue({ empleado: empleadoGuardado });
-      }
+      Object.keys(this.form.controls).forEach(key => {
+        const value = localStorage.getItem(key);
+        if (value) {
+          this.form.patchValue({ [key]: value });
+        }
+      });
     }
+
+    this.form.valueChanges.subscribe(value => {
+      Object.keys(value).forEach(key => {
+        localStorage.setItem(key, value[key]);
+      });
+    });
   }
 
   // Puedo guardar varios objetos en localStorage, pero no puedo guardar un objeto con varios campos
@@ -97,7 +101,11 @@ export class Formulario implements OnInit {
     }
 
     if (this.form.valid) {
-      // Mirar como guardar todos los datos como jn
+
+      Object.keys(this.form.controls).forEach(dato => {
+        localStorage.setItem(dato, this.form.get(dato)?.value);
+      })
+      
       const nuevaIncidencia: Incidencias = {
         id: (Number(this.incidencia[this.incidencia.length - 1].id) + 1).toString(),
         nombre: this.form.value.nombre,
@@ -114,6 +122,9 @@ export class Formulario implements OnInit {
         (response) => {
           console.log('Incidencia guardada:', response);
           this.form.reset();
+          Object.keys(this.form.controls).forEach(key => {
+            localStorage.removeItem(key);
+          });
         },
         (error) => {
           console.error('Error al guardar la incidencia:', error);
